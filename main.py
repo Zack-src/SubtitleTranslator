@@ -32,5 +32,5 @@ for event in doc.events:
         event.text = translation
 
 # Write the translated ASS document to a new file
-with open("translated.ass", "w") as f:
+with open("translated.ass", "w", encoding='utf-8-sig') as f:
     doc.dump_file(f)
